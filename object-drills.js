@@ -110,18 +110,67 @@
 
 // enrollInSummerSchool(studentData);
 
-// you can pass in `scratchData` to test out `findByid`
-// your function
-const scratchData = [
-  { id: 22, foo: 'bar' },
-  { id: 28, foo: 'bizz' },
-  { id: 19, foo: 'bazz' },
-];
 
-function findById(items, idNum) {
-  for (let i = 0; i < items.length; i++) {
-    if (idNum === items[i].id) {
-      return items[i];
-      }
-    }
-  }
+// Find By Id
+
+// const scratchData = [
+//   { id: 22, foo: 'bar' },
+//   { id: 28, foo: 'bizz' },
+//   { id: 19, foo: 'bazz' },
+// ];
+
+// function findById(items, idNum) {
+//   for (let i = 0; i < items.length; i++) {
+//     if (idNum === items[i].id) {
+//       console.log(items[i])
+//       return items[i];
+//       }
+//     }
+//   }
+
+//   findById(scratchData, 28)
+
+// running the function with `objectA` and `expectedKeys`
+// should return `true`
+
+// const objectA = {
+//   id: 2,
+//   name: 'Jane Doe',
+//   age: 34,
+//   city: 'Chicago',
+// };
+
+
+// const objectB = {
+//   id: 3,
+//   age: 33,
+//   city: 'Peoria',
+// };
+
+// const expectedKeys = ['id', 'name', 'age', 'city'];
+
+// function validateKeys(object, expectedKeys) {
+  
+//   if(expectedKeys.length !== Object.keys(object).length){
+//     return false;
+//   }
+
+//   for(var i = 0; i < expectedKeys.length; i++){
+   
+//     if(!Object.keys(object).find(key => key === expectedKeys[i])){
+//     return false;
+//     }
+    
+//   }
+
+//   return true;
+
+//   }
+
+
+
+
+
+
+  
+

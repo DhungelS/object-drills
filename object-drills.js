@@ -34,42 +34,51 @@
 //   return person;
 // }
 
-function keyDeleter(obj) {
-  delete sampleObj.foo;
-  delete sampleObj.bar;
-  return sampleObj;
-}
+// function keyDeleter(obj) {
+//   delete sampleObj.foo;
+//   delete sampleObj.bar;
+//   return sampleObj;
+// }
 
-var sampleObj = {
-  foo: 'foo',
-  bar: 'bar',
-  bizz: 'bizz',
-  bang: 'bang',
-};
+// var sampleObj = {
+//   foo: 'foo',
+//   bar: 'bar',
+//   bizz: 'bizz',
+//   bang: 'bang',
+// };
 
-(function testKeyDeleter() {
-  var obj = keyDeleter({
-    foo: 'foo',
-    bar: 'bar',
-    bizz: 'bizz',
-    bang: 'bang',
-  });
+// (function testKeyDeleter() {
+//   var obj = keyDeleter({
+//     foo: 'foo',
+//     bar: 'bar',
+//     bizz: 'bizz',
+//     bang: 'bang',
+//   });
 
-  if (typeof obj !== 'object') {
-    console.error('ERROR: `keyDeleter` must be return an object');
-    return false;
-  }
-  ['foo', 'bar'].forEach(function(key) {
-    if (key in obj) {
-      console.error('`keyDeleter` did not delete the key for ' + key);
-      return false;
-    }
-  });
-  ['bizz', 'bang'].forEach(function(key) {
-    if (!(key in obj && obj[key] === key)) {
-      console.error('`keyDeleter` is deleting keys other than `foo` and `bar`');
-      return false;
-    }
-  });
-  console.log('SUCCESS: `keyDeleter` works correctly!');
-})();
+//   if (typeof obj !== 'object') {
+//     console.error('ERROR: `keyDeleter` must be return an object');
+//     return false;
+//   }
+//   ['foo', 'bar'].forEach(function(key) {
+//     if (key in obj) {
+//       console.error('`keyDeleter` did not delete the key for ' + key);
+//       return false;
+//     }
+//   });
+//   ['bizz', 'bang'].forEach(function(key) {
+//     if (!(key in obj && obj[key] === key)) {
+//       console.error('`keyDeleter` is deleting keys other than `foo` and `bar`');
+//       return false;
+//     }
+//   });
+//   console.log('SUCCESS: `keyDeleter` works correctly!');
+// })();
+
+// function makeStudentsReport(data) {
+//   const results = [];
+//   for (let i = 0; i < data.length; i++) {
+//     results.push(`${data[i].name}: ${data[i].grade}`);
+//   }
+//   return results;
+//   }
+
